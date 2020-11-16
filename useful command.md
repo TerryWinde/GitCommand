@@ -1,4 +1,4 @@
-# gradlew compileDebug --stacktrace
-# gradlew compileDebug --stacktrace -info
-# gradlew compileDebug --stacktrace -debug
-# gradlew compileDebugSources --stacktrace -info
+- gradlew compileDebug --stacktrace
+- gradlew compileDebug --stacktrace -info
+- gradlew compileDebug --stacktrace -debug
+- gradlew compileDebugSources --stacktrace -info
