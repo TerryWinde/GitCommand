@@ -1,19 +1,17 @@
 # Live Templates
 
-header
-Add a header for the file
-```
+- Header
+
+```java
 /**
-* Create by terry on $DATE$
-* 
-* Description:
-*
+* Create by Terry on $date$
 */
 ```
 
-newInstance
-Creates an instance of the fragment with arguments
-```
+- newInstance
+  Creates an instance of the fragment with arguments
+
+```kotlin
 companion object {
     fun newInstance($args$): $fragment$ {
       val args = android.os.Bundle()
@@ -23,5 +21,22 @@ companion object {
       fragment.arguments = args
       return fragment
     }
+}
+```
+- singleInstance
+```java
+private static volatile $NAME$ singleton = null;
+
+private $NAME$() {}
+
+public static $NAME$ getInstance() {
+    if (singleton == null) {
+        synchronized ($NAME$.class) {
+            if (singleton == null) {
+                singleton = new $NAME$();
+            }
+        }
+    }
+    return singleton;
 }
 ```
